@@ -35,5 +35,5 @@ jobs:
       env:
         TFE_TOKEN: ${{ secrets.TFE_TOKEN }}
       run: |
-        terraform login
+        yes "yes" | terraform login
         terraform publish
